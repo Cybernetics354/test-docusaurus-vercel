@@ -10,6 +10,9 @@ module.exports = {
   organizationName: 'Ala Labs', // Usually your GitHub org/user name.
   projectName: 'ala-mobile-docs', // Usually your repo name.
   themeConfig: {
+    prism: {
+      additionalLanguages: ['dart'],
+    },
     navbar: {
       title: 'ALA Dev',
       logo: {

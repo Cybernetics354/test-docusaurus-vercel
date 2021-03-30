@@ -3,26 +3,17 @@ title: Getting Started
 slug: /
 ---
 
-## Step 1: Generate a new Docusaurus site
+## ALA Mobile Apps
 
-If you haven't already, generate a new Docusaurus site using the classic template:
+Ala is using [Flutter](https://flutter.dev/) to build our apps, Flutter is a Open Source Framework made by Google to create a
+Cross-Platforms Native-Compiled Apps, **There are 4 Apps :**
+1. Ala Personal
+1. Ala Partner
+1. Ala Inflow
+1. Ala Carrier
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
 
-## Step 2: Start your Docusaurus site
+## Project Structure
 
-Run the development server in the newly created `my-website` folder:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Open `docs/getting-started.md` and edit some lines. The site reloads automatically and display your changes.
-
-## That's it!
-
-Congratulations! You've successfully run and modified your Docusaurus project.
+Ala using [RxDart](https://pub.dev/packages/rxdart) for Reactive State Management. If you have already familiar with BloC, then it's
+easy to get into. 
