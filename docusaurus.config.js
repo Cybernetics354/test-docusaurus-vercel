@@ -2,7 +2,7 @@
 module.exports = {
   title: 'ALA Dev',
   tagline: 'The Documentation for ALAs Mobile Apps',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://test-docusaurus-seven.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -10,6 +10,18 @@ module.exports = {
   organizationName: 'Ala Labs', // Usually your GitHub org/user name.
   projectName: 'ala-mobile-docs', // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: '6529d2eddf6048803f36a863fa3800b6',
+      indexName: 'docu_testing',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
     prism: {
       additionalLanguages: ['dart'],
     },
@@ -28,7 +40,7 @@ module.exports = {
         },
         // {to: 'blog', label: 'Blog', position: 'right'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Cybernetics354/test-docusaurus-vercel',
           label: 'GitHub',
           position: 'right',
         },
@@ -63,21 +75,8 @@ module.exports = {
             },
           ],
         },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} ALA Dev, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
